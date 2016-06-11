@@ -1,0 +1,59 @@
+﻿# Header
+menu:
+  主页: /
+  所有文章: /archives
+  # 随笔: /tags/随笔
+
+# SubNav
+subnav:
+  github: "https://github.com/jumpbyte"
+  weibo: "http://weibo.com/u/1952610411"
+  #rss: "#"
+  zhihu: "https://www.zhihu.com/people/zhi-liao-95"
+  douban: "https://www.douban.com/people/114704639"
+  mail: "yja886@163.com"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+rss: /atom.xml
+
+# Content
+excerpt_link: more
+fancybox: true
+mathjax: true
+
+# 是否开启动画效果
+animate: true
+
+# 是否在新窗口打开链接
+open_in_new: false
+
+# Miscellaneous
+google_analytics: ''
+favicon: /favicon.png
+
+#你的头像url
+avatar: "http://tva4.sinaimg.cn/crop.154.494.1235.1235.180/7462786bjw8f4rmzsmb6kj216w1psdlj.jpg"
+#是否开启分享
+share_jia: true
+share_addthis: false
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+duoshuo: jumpbyte.cn
+#是否开启云标签
+tagcloud: true
+
+#是否开启友情链接
+#不开启——
+#friends: false
+#开启——
+friends:
+  SunnySmile的博客:  http://www.cnblogs.com/yja9010
+
+#是否开启“关于我”。
+#不开启——
+#aboutme: false
+#开启——
+aboutme: 90后潜力架构师一枚，关注分布式缓存，可持续集成技术，喜欢开源，喜欢钻研，linux爱好者,希望能跟各种技术爱好者共同交流学习，进步！
