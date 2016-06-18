@@ -1,6 +1,8 @@
 ---
-title: welcome-to-myblog
+title: 欢迎访问JumpByte的博客
 date: 2016-06-08 00:00:56
-tags:
+tags:redis,test
 ---
-### Welcome To My Hexo Blog
+### 我想说的
+
+欢迎访问我的博客，希望能跟大家多交流学习
