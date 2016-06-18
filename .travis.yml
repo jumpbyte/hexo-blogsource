@@ -15,7 +15,7 @@ before_install:
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name 'jumpbyte'
 - git config --global user.email '920293408@qq.com'
-install:
+install: 
 - npm install hexo-cli -g
 - npm install
 script:
