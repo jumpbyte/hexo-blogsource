@@ -1,5 +1,5 @@
 language: node_js
-sudo:required
+sudo:true
 branches:
   only:
   - master
@@ -10,7 +10,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_280170e2b92d_key -iv $encrypted_280170e2b92d_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
+- ssh -add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name 'jumpbyte'
 - git config --global user.email '920293408@qq.com'
