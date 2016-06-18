@@ -4,7 +4,7 @@ branches:
   only:
   - master
 cache:
-  directories:
+  directories: 
   - node_modules
 before_install:
 - openssl aes-256-cbc -K $encrypted_280170e2b92d_key -iv $encrypted_280170e2b92d_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
