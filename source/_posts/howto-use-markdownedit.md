@@ -1,7 +1,8 @@
 ---
-title: howto-use-markdownedit
+title: 如何使用Cmd Markdown 编写MarkDown文档
 date: 2016-06-19 08:25:26
-tags: CmdMarkdown
+categories: markdown
+tags: [CmdMarkdown,markdown,test]
 ---
 # 欢迎使用 Cmd Markdown 编辑阅读器
 
