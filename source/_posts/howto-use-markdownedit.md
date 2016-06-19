@@ -1,7 +1,7 @@
 ---
 title: howto-use-markdownedit
 date: 2016-06-19 08:25:26
-tags:CmdMarkdown
+tags: CmdMarkdown
 ---
 # 欢迎使用 Cmd Markdown 编辑阅读器
 
