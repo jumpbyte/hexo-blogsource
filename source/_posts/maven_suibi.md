@@ -12,9 +12,9 @@ tags: [maven,随笔,maven使用教程]
 
 # maven知识整理
 
-## 向本地仓库添加已有jar包
+## 向本地仓库添加已有jar包  
 
-在maven仓库找不到引用的包，同时还要使用maven来管理，此时我们就需要先去其他官网找到我们自己要用的jar包，然后使用```mvn install```将其放到我们的本地的maven仓库，之后后在项目pom.xml里面添加此依赖包就可以
+在maven仓库找不到引用的包，同时还要使用maven来管理，此时我们就需要先去其他官网找到我们自己要用的jar包，然后使用`mvn install`将其放到我们的本地的maven仓库，之后后在项目pom.xml里面添加此依赖包就可以
 
 比如引用sqljdbc4.jar包，maven仓库中没有，所以我们先从微软官网下载下来，然后使用下面的命令将期添加到自己的本地仓库中去
 
@@ -35,7 +35,6 @@ D:\soft\develop\java-jars>mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId
 [INFO] Finished at: Sat Jun 25 13:32:34 CST 2016
 [INFO] Final Memory: 5M/119M
 [INFO] ------------------------------------------------------------------------
-
 ```
 接着在pom.xml添加依赖
 
@@ -46,5 +45,4 @@ D:\soft\develop\java-jars>mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId
   <version>4.0</version>
 </dependency>
 ```
-
 此方法也可以方便把我们自己的项目的jar包安装到本地的maven仓库中去
