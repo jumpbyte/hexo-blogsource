@@ -17,8 +17,15 @@
 </script>
 <%- js('http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min') %>
 <%- js('js/main') %>
-
-
+<!--prettify代码高亮js引入-->
+<link rel="stylesheet" href="/prettify/themes/tranquil-heart.css" type="text/css">
+<script src="//cdn.bootcss.com/prettify/r298/prettify.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(window).load(function(){
+$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+ prettyPrint();
+})
+</script>
 <%- partial('google-analytics') %>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <% if (theme.mathjax){ %>
