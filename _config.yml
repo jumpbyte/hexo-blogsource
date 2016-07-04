@@ -27,6 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+    - "plugins/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -43,6 +44,9 @@ highlight:
   line_number: false
   auto_detect: false
   tab_replace:
+prettify:
+  enable: true
+  theme: "atelier-sulphurpool-dark"
 # Category & Tag
 default_category: uncategorized
 category_map:
