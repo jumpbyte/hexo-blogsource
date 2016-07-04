@@ -4,12 +4,12 @@ date: 2016-07-02 21:14:37
 tags: [hexo,prettify,高亮插件]
 ---
 
-使用hexo的默认高亮插件总感觉支持的太少，代码高亮显示的不够细，下面我们来看下怎么把它替换prettify插件
+使用hexo的默认高亮插件总感觉支持的太少，代码高亮显示的不够细，下面我们来看下怎么把它替换为prettify高亮插件
 
 
 ## 第一步：禁用默认高亮插件
 
-在_config.yml将highlight插件禁用
+在hexo博客_config.yml中将highlight插件禁用
 ```
 highlight:
   enable: false
