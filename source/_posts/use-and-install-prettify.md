@@ -7,6 +7,7 @@ tags: [hexo,prettify,高亮插件]
 使用hexo的默认高亮插件总感觉支持的太少，代码高亮显示的不够细，下面我们来看下怎么把它替换为prettify高亮插件
 
 
+
 ## 第一步：禁用默认高亮插件
 
 在hexo博客_config.yml中将highlight插件禁用
@@ -18,6 +19,7 @@ highlight:
   tab_replace:
 ```
 <!--more-->
+
 ## 第二步：引用prettify插件
 
 ### **下载插件**
@@ -26,7 +28,8 @@ highlight:
 ![](http://ww2.sinaimg.cn/large/7462786bgw1f5h1gmp2m7j20k709bmzm.jpg)
 
 接着我们还要对hexo的_config.yml做如下配置
-```
+
+```yml
 skip_render:
     - "plugins/**"
 ```
@@ -70,7 +73,7 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 
 ![](http://ww2.sinaimg.cn/large/7462786bgw1f5gnphrzndj21es09kwj8.jpg)
 
-### 第三步：对yilia主题调整修改
+## 第三步：对yilia主题调整修改
 
  上一步高亮结果显示有问题，于是立马怀疑yilia主题没有对highlight配置项做开关控制，结果发现在`themes\yilia\source\css\style.styl`文件确实没有做开关设置，而是直接引入
 ![](http://ww2.sinaimg.cn/large/7462786bgw1f5h231d2yjj20i60ccdhb.jpg)
@@ -81,7 +84,7 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
 然后将其中搜下所有pre,code 标签关联的样式删除之
 3. 最后再在`themes\yilia\source\css\style.styl`文件中在加入下面几行调整样式
 
-  ```css
+  ```ss
   /*解决prettyify在yilia主题下面行号显示问题*/
   pre.prettyprint{
     padding-left: 20px;
@@ -170,3 +173,6 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
    只要要把默认样式也拷贝到/plugins/prettify/themes/目录下面即可
 
 通过以上的配置，我们就可以灵活的切换prettify高亮主题了，并且通过配置可以来回切换高亮插件，只要你想要，就是这么任性！
+
+
+

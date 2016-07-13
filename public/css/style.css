@@ -208,10 +208,10 @@ pre.prettyprint {
   padding-left: 20px;
 }
 /*代码自动换行*/
-pre {
-  word-break: break-all;
-  word-wrap: break-word;
-}
+/*pre{
+    word-break: break-all;
+    word-wrap: break-word;
+  }*/
 #container {
   position: relative;
   min-height: 100%;

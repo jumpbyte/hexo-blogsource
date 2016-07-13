@@ -1,5 +1,6 @@
 ---
 title: 404 Not Found：该页无法显示
+toc: false
 comments: false
 permalink: /404
 fancybox: false
@@ -55,7 +56,7 @@ fancybox: false
 ***
 
 <div class="pic">
-<img src="/404.jpg" title="404">
+<img src="resources/404.jpg" title="404">
 </div>
 
 <p class="center">很抱歉，您所访问的地址并不存在: </p>

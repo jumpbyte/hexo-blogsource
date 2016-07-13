@@ -67,11 +67,6 @@
 						</div>
 						
 						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
 					</div>
 					
 				</div>
@@ -83,8 +78,6 @@
 						
 						<li>友情链接</li>
 						
-						
-						<li>关于我</li>
 						
 					</ul>
 				</div>
@@ -102,6 +95,8 @@
 							<li><a href="/archives">所有文章</a></li>
 				        
 							<li><a href="/tags/随笔/">随笔</a></li>
+				        
+							<li><a href="/about">关于我</a></li>
 				        
 						</ul>
 					</nav>
@@ -141,12 +136,6 @@
 				
 
 				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">90后潜力架构师一枚，喜欢开源，喜欢钻研，linux爱好者，希望能和各种技术爱好者共同交流学习，进步！</div>
-				</section>
-				
 			</div>
 		</div>
 	</header>				
@@ -180,6 +169,8 @@
 					<li><a href="/archives">所有文章</a></li>
 		        
 					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li><a href="/about">关于我</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -231,8 +222,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#x4F7F;&#x7528;hexo&#x7684;&#x9ED8;&#x8BA4;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;&#x603B;&#x611F;&#x89C9;&#x652F;&#x6301;&#x7684;&#x592A;&#x5C11;&#xFF0C;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x7684;&#x4E0D;&#x591F;&#x7EC6;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E0B;&#x600E;&#x4E48;&#x628A;&#x5B83;&#x66FF;&#x6362;prettify&#x63D2;&#x4EF6;</p>
-<h2 id="&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x7981;&#x7528;&#x9ED8;&#x8BA4;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;"><a href="#&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x7981;&#x7528;&#x9ED8;&#x8BA4;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;" class="headerlink" title="&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x7981;&#x7528;&#x9ED8;&#x8BA4;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;"></a>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x7981;&#x7528;&#x9ED8;&#x8BA4;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;</h2><p>&#x5728;_config.yml&#x5C06;highlight&#x63D2;&#x4EF6;&#x7981;&#x7528;</p>
+        <p>使用hexo的默认高亮插件总感觉支持的太少，代码高亮显示的不够细，下面我们来看下怎么把它替换为prettify高亮插件</p>
+<h2 id="第一步：禁用默认高亮插件"><a href="#第一步：禁用默认高亮插件" class="headerlink" title="第一步：禁用默认高亮插件"></a>第一步：禁用默认高亮插件</h2><p>在hexo博客_config.yml中将highlight插件禁用</p>
 <pre><code>highlight:
   enable: false
   line_number: false
@@ -298,8 +289,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="&#x5199;&#x5728;&#x524D;&#x9762;"><a href="#&#x5199;&#x5728;&#x524D;&#x9762;" class="headerlink" title="&#x5199;&#x5728;&#x524D;&#x9762;"></a>&#x5199;&#x5728;&#x524D;&#x9762;</h1><p>&#x6B64;&#x7BC7;&#x968F;&#x7B14;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x7EAA;&#x5F55;&#x535A;&#x4E3B;&#x5728;&#x65E5;&#x5E38;&#x4F7F;&#x7528;maven&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6280;&#x672F;&#x77E5;&#x8BC6;&#x788E;&#x7247;&#xFF0C;&#x91CC;&#x9762;&#x4F1A;&#x5305;&#x62EC;maven&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x548C;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x7684;&#x95EE;&#x9898;</p>
-<h1 id="maven&#x77E5;&#x8BC6;&#x6574;&#x7406;"><a href="#maven&#x77E5;&#x8BC6;&#x6574;&#x7406;" class="headerlink" title="maven&#x77E5;&#x8BC6;&#x6574;&#x7406;"></a>maven&#x77E5;&#x8BC6;&#x6574;&#x7406;</h1><h2 id="&#x5411;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x6DFB;&#x52A0;&#x5DF2;&#x6709;jar&#x5305;"><a href="#&#x5411;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x6DFB;&#x52A0;&#x5DF2;&#x6709;jar&#x5305;" class="headerlink" title="&#x5411;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x6DFB;&#x52A0;&#x5DF2;&#x6709;jar&#x5305;"></a>&#x5411;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x6DFB;&#x52A0;&#x5DF2;&#x6709;jar&#x5305;</h2>
+        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>此篇随笔，主要用来纪录博主在日常使用maven过程中的技术知识碎片，里面会包括maven的基本操作和使用过程的问题</p>
+<h1 id="maven知识整理"><a href="#maven知识整理" class="headerlink" title="maven知识整理"></a>maven知识整理</h1><h2 id="向本地仓库添加已有jar包"><a href="#向本地仓库添加已有jar包" class="headerlink" title="向本地仓库添加已有jar包"></a>向本地仓库添加已有jar包</h2>
       
     </div>
     
@@ -360,11 +351,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="this-is-create-by-atom"><a href="#this-is-create-by-atom" class="headerlink" title="this is create by atom"></a>this is create by atom</h3><pre><code>this a code block
-</code></pre><p>[] &#x9009;&#x9879;</p>
+</code></pre><p>[] 选项</p>
 <blockquote>
-<p>&#x6587;&#x5B57;&#x5F15;&#x7528;</p>
+<p>文字引用</p>
 </blockquote>
-<h3 id="TODO&#x5217;&#x8868;"><a href="#TODO&#x5217;&#x8868;" class="headerlink" title="TODO&#x5217;&#x8868;"></a>TODO&#x5217;&#x8868;</h3><ul>
+<h3 id="TODO列表"><a href="#TODO列表" class="headerlink" title="TODO列表"></a>TODO列表</h3><ul>
 <li>[ ] AAA<ul>
 <li>[x] bbb</li>
 <li>[ ] aaa</li>
@@ -428,12 +419,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <a id="more"></a>
-<h2 id="&#x6D4B;&#x8BD5;prettify&#x9AD8;&#x4EAE;"><a href="#&#x6D4B;&#x8BD5;prettify&#x9AD8;&#x4EAE;" class="headerlink" title="&#x6D4B;&#x8BD5;prettify&#x9AD8;&#x4EAE;"></a>&#x6D4B;&#x8BD5;prettify&#x9AD8;&#x4EAE;</h2><pre><code class="java">@Test
+<h2 id="测试prettify高亮"><a href="#测试prettify高亮" class="headerlink" title="测试prettify高亮"></a>测试prettify高亮</h2><pre><code class="java">@Test
 public  void   test3() throws ParseException {
     SqlSession session = sqlSessionFactory.openSession();
     try {
         IUserDao userDao = session.getMapper(IUserDao.class);
-        User user=new User(0,&quot;&#x8D75;&#x516D;&quot;,&quot;zhaoliu&quot;,1,new SimpleDateFormat(&quot;yyyy-MM-dd&quot;).parse(&quot;1989-01-23&quot;));
+        User user=new User(0,&quot;赵六&quot;,&quot;zhaoliu&quot;,1,new SimpleDateFormat(&quot;yyyy-MM-dd&quot;).parse(&quot;1989-01-23&quot;));
         int acceptCount= userDao.insert(user);
         session.commit();
         Assert.assertEquals(1,acceptCount);
@@ -498,13 +489,13 @@ public  void   test3() throws ParseException {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Cmd-Markdown-&#x7B80;&#x660E;&#x8BED;&#x6CD5;&#x624B;&#x518C;"><a href="#Cmd-Markdown-&#x7B80;&#x660E;&#x8BED;&#x6CD5;&#x624B;&#x518C;" class="headerlink" title="Cmd Markdown &#x7B80;&#x660E;&#x8BED;&#x6CD5;&#x624B;&#x518C;"></a>Cmd Markdown &#x7B80;&#x660E;&#x8BED;&#x6CD5;&#x624B;&#x518C;</h1><p>&#x6807;&#x7B7E;&#xFF1A; Cmd-Markdown</p>
+        <h1 id="Cmd-Markdown-简明语法手册"><a href="#Cmd-Markdown-简明语法手册" class="headerlink" title="Cmd Markdown 简明语法手册"></a>Cmd Markdown 简明语法手册</h1><p>标签： Cmd-Markdown</p>
 <hr>
-<h3 id="1-&#x659C;&#x4F53;&#x548C;&#x7C97;&#x4F53;"><a href="#1-&#x659C;&#x4F53;&#x548C;&#x7C97;&#x4F53;" class="headerlink" title="1. &#x659C;&#x4F53;&#x548C;&#x7C97;&#x4F53;"></a>1. &#x659C;&#x4F53;&#x548C;&#x7C97;&#x4F53;</h3><p>&#x4F7F;&#x7528; <em> &#x548C; *</em> &#x8868;&#x793A;&#x659C;&#x4F53;&#x548C;&#x7C97;&#x4F53;&#x3002;</p>
-<p>&#x793A;&#x4F8B;&#xFF1A;</p>
-<p>&#x8FD9;&#x662F; <em>&#x659C;&#x4F53;</em>&#xFF0C;&#x8FD9;&#x662F; <strong>&#x7C97;&#x4F53;</strong>&#x3002;</p>
-<h3 id="2-&#x5206;&#x7EA7;&#x6807;&#x9898;"><a href="#2-&#x5206;&#x7EA7;&#x6807;&#x9898;" class="headerlink" title="2. &#x5206;&#x7EA7;&#x6807;&#x9898;"></a>2. &#x5206;&#x7EA7;&#x6807;&#x9898;</h3><p>&#x4F7F;&#x7528; === &#x8868;&#x793A;&#x4E00;&#x7EA7;&#x6807;&#x9898;&#xFF0C;&#x4F7F;&#x7528; &#x2014; &#x8868;&#x793A;&#x4E8C;&#x7EA7;&#x6807;&#x9898;&#x3002;</p>
-<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<h3 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1. 斜体和粗体"></a>1. 斜体和粗体</h3><p>使用 <em> 和 *</em> 表示斜体和粗体。</p>
+<p>示例：</p>
+<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
+<h3 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2. 分级标题"></a>2. 分级标题</h3><p>使用 === 表示一级标题，使用 — 表示二级标题。</p>
+<p>示例：</p>
       
     </div>
     
@@ -568,14 +559,14 @@ public  void   test3() throws ParseException {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="&#x6B22;&#x8FCE;&#x4F7F;&#x7528;-Cmd-Markdown-&#x7F16;&#x8F91;&#x9605;&#x8BFB;&#x5668;"><a href="#&#x6B22;&#x8FCE;&#x4F7F;&#x7528;-Cmd-Markdown-&#x7F16;&#x8F91;&#x9605;&#x8BFB;&#x5668;" class="headerlink" title="&#x6B22;&#x8FCE;&#x4F7F;&#x7528; Cmd Markdown &#x7F16;&#x8F91;&#x9605;&#x8BFB;&#x5668;"></a>&#x6B22;&#x8FCE;&#x4F7F;&#x7528; Cmd Markdown &#x7F16;&#x8F91;&#x9605;&#x8BFB;&#x5668;</h1><hr>
-<p>&#x6211;&#x4EEC;&#x7406;&#x89E3;&#x60A8;&#x9700;&#x8981;&#x66F4;&#x4FBF;&#x6377;&#x66F4;&#x9AD8;&#x6548;&#x7684;&#x5DE5;&#x5177;&#x8BB0;&#x5F55;&#x601D;&#x60F3;&#xFF0C;&#x6574;&#x7406;&#x7B14;&#x8BB0;&#x3001;&#x77E5;&#x8BC6;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x4E2D;&#x627F;&#x8F7D;&#x7684;&#x4EF7;&#x503C;&#x4F20;&#x64AD;&#x7ED9;&#x4ED6;&#x4EBA;&#xFF0C;<strong>Cmd Markdown</strong> &#x662F;&#x6211;&#x4EEC;&#x7ED9;&#x51FA;&#x7684;&#x7B54;&#x6848; &#x2014;&#x2014; &#x6211;&#x4EEC;&#x4E3A;&#x8BB0;&#x5F55;&#x601D;&#x60F3;&#x548C;&#x5206;&#x4EAB;&#x77E5;&#x8BC6;&#x63D0;&#x4F9B;&#x66F4;&#x4E13;&#x4E1A;&#x7684;&#x5DE5;&#x5177;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Cmd Markdown&#xFF1A;</p>
+        <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <blockquote>
 <ul>
-<li>&#x6574;&#x7406;&#x77E5;&#x8BC6;&#xFF0C;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</li>
-<li>&#x53D1;&#x5E03;&#x65E5;&#x8BB0;&#xFF0C;&#x6742;&#x6587;&#xFF0C;&#x6240;&#x89C1;&#x6240;&#x60F3;</li>
-<li>&#x64B0;&#x5199;&#x53D1;&#x5E03;&#x6280;&#x672F;&#x6587;&#x7A3F;&#xFF08;&#x4EE3;&#x7801;&#x652F;&#x6301;&#xFF09;</li>
-<li>&#x64B0;&#x5199;&#x53D1;&#x5E03;&#x5B66;&#x672F;&#x8BBA;&#x6587;&#xFF08;LaTeX &#x516C;&#x5F0F;&#x652F;&#x6301;&#xFF09;</li></ul></blockquote>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）
       
     </div>
     
