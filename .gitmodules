@@ -1,0 +1,6 @@
+[submodule "themes/yelee"]
+	path = themes/yelee
+	url = https://github.com/MOxFIVE/hexo-theme-yelee.git
+[submodule "themes/jumpbyte"]
+	path = themes/jumpbyte
+	url = https://github.com/jumpbyte/hexo-theme-jumpbyte.git
