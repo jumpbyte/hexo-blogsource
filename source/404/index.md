@@ -66,6 +66,6 @@ fancybox: false
 <p class="center">可在边栏搜索框中对本站进行检索，以获取相关信息。</p>
 
 <div style="text-align: center">
-以下是博主喜欢的一些歌曲，可以听听，稍作休息~
+ 稍安勿躁，以下是博主推荐的歌曲，请您欣赏....
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=402231283&auto=0&height=430"></iframe>
 </div>
