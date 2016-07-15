@@ -29,7 +29,9 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
     - "plugins/**"
-
+    - "google46a3aa29a75e9ca9.html"
+    - "baidu_verify_XMxUyW4DB7.html"
+    - "reboot.txt"
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -69,6 +71,12 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: yelee   # jumpbyte|yelee
+
+#sitemap
+sitemap:
+   path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
