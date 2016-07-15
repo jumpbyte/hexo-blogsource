@@ -10,7 +10,7 @@ menu:
   主页: /
   所有文章: /archives/
   随笔: /tags/随笔
-  标签云: /tags/
+  标签分类: /tags
   关于我: /about
 
 # Link to your avatar | 填写头像地址
@@ -116,7 +116,7 @@ youyan:
 ## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
 ## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
 ## "0": white-gray background | 淳朴灰白背景
-background_image: 5
+background_image: 0
 
 # Base Font Size | 字号调节
 base_font_size: 16  #px, 16 - 24

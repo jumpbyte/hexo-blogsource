@@ -166,7 +166,7 @@
                         
                             <li><a href="/tags/随笔">随笔</a></li>
                         
-                            <li><a href="/tags/">标签云</a></li>
+                            <li><a href="/tags">标签分类</a></li>
                         
                             <li><a href="/about">关于我</a></li>
                         
@@ -249,7 +249,7 @@
                 
                     <li><a href="/tags/随笔">随笔</a></li>
                 
-                    <li><a href="/tags/">标签云</a></li>
+                    <li><a href="/tags">标签分类</a></li>
                 
                     <li><a href="/about">关于我</a></li>
                 
@@ -309,6 +309,10 @@
 
         <div class="article-info info-on-archive">
           
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/折腾记/">折腾记</a>
+    </div>
+
 
           
     <div class="article-tag tagcloud">
@@ -342,6 +346,10 @@
 
         <div class="article-info info-on-archive">
           
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/知识整理/">知识整理</a>
+    </div>
+
 
           
     <div class="article-tag tagcloud">
@@ -375,6 +383,10 @@
 
         <div class="article-info info-on-archive">
           
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/杂项/">杂项</a>
+    </div>
+
 
           
     <div class="article-tag tagcloud">
@@ -408,6 +420,10 @@
 
         <div class="article-info info-on-archive">
           
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/随笔/">随笔</a>
+    </div>
+
 
           
     <div class="article-tag tagcloud">
@@ -546,7 +562,7 @@
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = 5;
+                var backgroundnum = 1;
                 var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }

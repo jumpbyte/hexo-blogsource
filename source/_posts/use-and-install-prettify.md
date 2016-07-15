@@ -2,6 +2,7 @@
 title: 在hexo yilia博客主题下配置prettify高亮插件
 date: 2016-07-02 21:14:37
 tags: [hexo,prettify,高亮插件]
+categories: 折腾记
 ---
 
 使用hexo的默认高亮插件总感觉支持的太少，代码高亮显示的不够细，下面我们来看下怎么把它替换为prettify高亮插件
@@ -173,6 +174,3 @@ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
    只要要把默认样式也拷贝到/plugins/prettify/themes/目录下面即可
 
 通过以上的配置，我们就可以灵活的切换prettify高亮主题了，并且通过配置可以来回切换高亮插件，只要你想要，就是这么任性！
-
-
-

@@ -2,6 +2,7 @@
 title: maven随笔纪录
 date: 2016-06-25 11:41:41
 tags: [maven,随笔,maven使用教程]
+categories: 知识整理
 ---
 
 
