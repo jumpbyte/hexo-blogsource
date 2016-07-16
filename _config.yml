@@ -53,6 +53,12 @@ prettify:
 # Category & Tag
 default_category: uncategorized
 category_map:
+    设计模式: gof23
+    代码片段: code_block_list
+    随笔: essay
+    杂项: other
+    知识整理: cleared_knowledge
+    折腾记: toss_record
 tag_map:
 
 # Date / Time format

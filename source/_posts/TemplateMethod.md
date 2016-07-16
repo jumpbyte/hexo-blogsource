@@ -25,7 +25,7 @@ tags: ['模板方法','TemplateMethod']
 
 ### UML图解
 
-![](http://oaefo3hoy.bkt.clouddn.com/TemplateMethod.jpg)
+![TemplateMethod UML图解](http://oaefo3hoy.bkt.clouddn.com/TemplateMethod.jpg)
 
 
 ### 示例

@@ -22,7 +22,7 @@ tags: ['解释器模式','Interpreter']
 
 ### UML图解
 
-![]()
+![](http://oaefo3hoy.bkt.clouddn.com/Interpreter.jpg)
 
 
 ### 示例

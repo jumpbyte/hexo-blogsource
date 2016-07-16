@@ -1,5 +1,5 @@
 ---
-title: 文章标签及分类列表
+title: 文章分类及标签列表
 toc: false
 type: "tags"
 comments: false
