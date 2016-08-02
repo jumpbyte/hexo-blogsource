@@ -86,13 +86,13 @@ baidusitemap:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-# deploy:
-#   type: git
-#   repo: git@github.com:jumpbyte/jumpbyte.github.io.git
-#   branch: master
 deploy:
   type: git
-  message: "hexo deploy generated pages"
-  repo:
-    # github: git@github.com:jumpbyte/jumpbyte.github.io.git,master
-    coding: git@git.coding.net:jumpbyte/jumpbyte.git,gitcafe-pages
+  repo: git@github.com:jumpbyte/jumpbyte.github.io.git
+  branch: master
+# deploy:
+#   type: git
+#   message: "hexo deploy generated pages"
+#   repo:
+#     # github: git@github.com:jumpbyte/jumpbyte.github.io.git,master
+#     coding: git@git.coding.net:jumpbyte/jumpbyte.git,gitcafe-pages
