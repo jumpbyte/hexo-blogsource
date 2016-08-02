@@ -4,7 +4,7 @@
 
 # Site
 title: JumpByte的博客
-subtitle: 代码农，技术痴，开源爱好者
+subtitle: 物质、世界、时间、空间，只不过是人类的幻觉
 description: 90后潜力架构师一枚，喜欢开源，喜欢钻研，linux爱好者，希望能和各种技术爱好者共同交流学习，进步！
 author: JumpByte
 language: zh-Hans
@@ -86,7 +86,13 @@ baidusitemap:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+#   type: git
+#   repo: git@github.com:jumpbyte/jumpbyte.github.io.git
+#   branch: master
 deploy:
   type: git
-  repo: git@github.com:jumpbyte/jumpbyte.github.io.git
-  branch: master
+  message: "hexo deploy generated pages"
+  repo:
+    # github: git@github.com:jumpbyte/jumpbyte.github.io.git,master
+    coding: git@git.coding.net:jumpbyte/jumpbyte.git,gitcafe-pages

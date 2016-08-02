@@ -42,48 +42,48 @@ tags: ['享元模式','Flyweight']
 **定义一个抽象棋子类**
 
 ``` C#
-namespace Flyweight
-{
-    /// <summary>
-    /// 抽象棋子类
-    /// </summary>
-    public abstract class Chess
+    namespace Flyweight
     {
-        Color color;
-        public string nickName { get; set; }
- 
         /// <summary>
-        /// 棋子颜色
+        /// 抽象棋子类
         /// </summary>
-        public Color Color
+        public abstract class Chess
         {
-            get { return color; }
+            Color color;
+            public string nickName { get; set; }
+     
+            /// <summary>
+            /// 棋子颜色
+            /// </summary>
+            public Color Color
+            {
+                get { return color; }
+            }
+     
+            /// <summary>
+            /// 棋子名称
+            /// </summary>
+            public string NickName
+            {
+                get { return nickName; }
+            }
+     
+     
+            protected Chess(Color c, string nickname)
+            {
+                color = c;
+                nickName = nickname;
+            }
+     
+            /// <summary>
+            /// 在棋盘上画出自身
+            /// </summary>
+            /// <param name="p"></param>
+            /// <param name="radius"></param>
+            public abstract void Draw(Point p, int radius);
+     
         }
- 
-        /// <summary>
-        /// 棋子名称
-        /// </summary>
-        public string NickName
-        {
-            get { return nickName; }
-        }
- 
- 
-        protected Chess(Color c, string nickname)
-        {
-            color = c;
-            nickName = nickname;
-        }
- 
-        /// <summary>
-        /// 在棋盘上画出自身
-        /// </summary>
-        /// <param name="p"></param>
-        /// <param name="radius"></param>
-        public abstract void Draw(Point p, int radius);
- 
     }
-}
 ```
 
 **五子棋子类，继承Chess**

@@ -45,7 +45,7 @@ tags: [markdown,markdown语法]
 
 示例：
 
-这是去往 [本人博客](http://ghosertblog.github.com) 的链接。
+这是去往 [本人博客](http://jumpbyte.cn) 的链接。
 
 ### 4. 无序列表
 
@@ -98,7 +98,7 @@ tags: [markdown,markdown语法]
 
 示例：
 
-![我的头像](https://www.zybuluo.com/static/img/my_head.jpg)
+![我的头像](http://tva4.sinaimg.cn/crop.154.494.1235.1235.180/7462786bjw8f4rmzsmb6kj216w1psdlj.jpg)
 
 # Cmd Markdown 高阶语法手册
 
