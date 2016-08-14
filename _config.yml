@@ -49,7 +49,7 @@ highlight:
   tab_replace:
 prettify:
   enable: true
-  theme: "atelier-sulphurpool-dark"
+  theme: "atelier-seaside-light"
 # Category & Tag
 default_category: uncategorized
 category_map:
