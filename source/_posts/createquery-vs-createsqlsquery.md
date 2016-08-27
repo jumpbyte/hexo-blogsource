@@ -9,7 +9,7 @@ tags: ['hibernate','java']
 
 ### createQuery
 
-可以使用"FROM Student"这的HQL语句，进行查询，其中的"Student"是持久化的Java类的名称
+可以使用"FROM Student"这样的HQL语句进行查询，其中"Student"是持久化Student类的名称
 
 <!--more-->
 例如：

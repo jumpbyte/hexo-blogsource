@@ -307,7 +307,7 @@ java -jar target/mymodule-0.0.1-SNAPSHOT.jar
 
 ### 源码下载
 
-[Spring Boot Spring MVC](http://javabeat.net/spring-boot-spring-mvc/)
+[Spring Boot Spring MVC](http://javabeat.net/download/spring-boot-spring-mvc/?wpdmdl=22124)
 
 ### 总结
 
