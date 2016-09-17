@@ -1,5 +1,5 @@
 ---
-title: 在hexo yilia博客主题下配置prettify高亮插件
+title: 为hexo博客加入prettify高亮插件
 date: 2016-07-02 21:14:37
 tags: [hexo,prettify,高亮插件]
 categories: 折腾记
