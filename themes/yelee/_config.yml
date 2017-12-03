@@ -96,14 +96,20 @@ disqus:
   # you have set "disqus_shortname" in your site's "_config.yml"
 
 duoshuo:
-  on: true
+  on: false
   domain: jumpbyte
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
+gitment:
+  on: true
+  owner: jumpbyte
+  repo: blog-comments
+  client_id: 0a066448008fa3f81f75
+  client_secret: 4206bee5f43c8b126e34fa74a6fe92665ebd0a48
 youyan:
-  #on: true
+  on: false
   id:
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
@@ -237,7 +243,7 @@ fancybox: true
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
-mathjax: false
+mathjax: true
 
 # Socail Share | 是否开启分享
 share:

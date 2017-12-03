@@ -96,4 +96,4 @@ deploy:
   repo:
     github: git@github.com:jumpbyte/jumpbyte.github.io.git,master
     #coding: git@git.coding.net:jumpbyte/jumpbyte.git,gitcafe-pages
-    coding: ssh://git@git-ssh.coding.net:443/jumpbyte/jumpbyte.git,gitcafe-pages
+    coding: ssh://git@git-ssh.coding.net:443/jumpbyte/jumpbyte.git,master
