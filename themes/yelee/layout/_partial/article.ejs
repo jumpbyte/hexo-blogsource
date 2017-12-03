@@ -79,7 +79,14 @@
         <%- partial('comments/disqus', {
             shortname: config.disqus_shortname
           }) %>
-    <% } %>
+    <% }else if (theme.gitment.on) { %>
+      <%- partial('comments/gitment', {
+        owner: theme.gitment.owner,
+        repo: theme.gitment.repo,
+        client_id: theme.gitment.client_id,
+        client_secret: theme.gitment.client_secret
+      }) %>
+  <% } %>
 <% } %>
 
 <%- partial('_partial/post-nav-button') %>

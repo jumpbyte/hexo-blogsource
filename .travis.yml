@@ -7,16 +7,19 @@ branches:
   - master
 env:
   global:
-    secure: j3QqrOXwoJVS2J7+5NADCUcRSwI5t/o++Lg9OeE239yT2XkQOaQNhxxvSdBECJLHB3PiOj3+ixHqLD7Oq2u34rHP+mq2keMuDjhE7b98Q1oErh23eI/yqp/73cgUd7rJeKmIk5rvRR4Tf6zCpf5SjpPrKg4kIkDJJQyOz5hkoVyv1SxoIq5Pnf9NjilrW4sypztcuh72oRg0satr0WFb/USjZ5v/+SfQxQs3nS5w8BxxUPwfyBl699eSzF2xOO6gLESOWhtpAxcCGEMDRvpXP2STUwszhrQcRG7UNnGRHQXEvcPGW/GxQMVeQeECD7aB9vRX79eMAU8MBF0oKFC9xdYSBXQJXG0rJ/YvUxR+dAfAGMqP6Sl+l2Cooj47Riylv1WIJyOlY6K7axoWfjq8smLHLC5fyl0VuPqH0wamMFkmO8rADvEIRXIn1/VoLwJ019KLVeediIko4R6CMCA4ZgETFh+Z6ZDFgTPxdGg6QXOVLAbW0LbNmk9ODhuUkcSCrxV20MP31yZbA3+Qy/ZnmiU2kqUU5iH6wHItV2Uf7T+0sA0sxPSGH+kq5IoY0mHD0WRlAD7bCoJFdIAa2kB7s1HfwYH2Thek2v/MZcd6sbHHbwcEoZk81INUUHlhM9ULus7YdLaUN8lqciIp2yGIAn2TWn8kv4QPYo49AFyd/aw=
+   - GIT_REPO: github.com/jumpbyte/jumpbyte.github.io.git
 cache:
   directories:
   - node_modules
-before_install:
+after_script:
+- cd ./public
 - git config --global user.name 'jumpbyte'
 - git config --global user.email 920293408@qq.com
-- sed -i'' "s~git@github.com:jumpbyte/jumpbyte.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/jumpbyte/jumpbyte.github.io.git~" _config.yml
+- git add .
+- git commit -m "Update docs"
+- git push --force --quiet "https://${REPO_TOKEN}@${GIT_REPO}" master:master
 install:
 - npm install hexo-cli -g
 - npm install
 script:
-- hexo clean && hexo g -d
+- hexo g
