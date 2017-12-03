@@ -9,6 +9,7 @@ env:
   global:
    - GIT_REPO: github.com/jumpbyte/jumpbyte.github.io.git
    - CODING_REPO: git.coding.net/jumpbyte/jumpbyte.git
+   - secure: HBazmsqHictKUiQQYouNGKQIyLGCp7PJhQkISJC0PdjxtPisJvU7sEyGaFzE+rB1iTt9fwwqwuXj+IrbmrAqTKKzlPZJnNQ5JRg14yzJY4a7NTcbDV39Ok8YPE8JgBOzeuG9qKzOBCxcMuHzbUxUYFBnlwW+i16uqrWpYF0U4vucg41UY7+bZqdIJYYkY+ILx/kPCvQT2/TzvWL1toZvk5h3kVTDzg+xZu04mfFW5timcb//VKUOUBSO4rctA1MQvKTJDpUj2kPn6qEv8I92ZChP9tOSSKQjyUsB4VCavrDAMRWEkWFiVhMeovqGWIuCrTr36jzLbSPF69Ye5K8H8ZKZaH8u+Q0AqS4Sq25WaZXzK9w0e5ukDWavKVuQBglo2KDIhNeWCHOJuCA59Qis1hUvosTKz+zA1XZ2myOcJO7s5RWb85QS6tsYlDS0XiA1YDrQwb3aPFvf6u+HP4MiIBppo7e1SJ9W4K8EXuuJuSZM8Nnuo86rKi/hEqHqQyttM1R3pvSq/HLpcvrRiMNUrktpgoNk/xRxnPOuBxV0ELJNtD03aTlEjShLmYYAUs6OukXfGbVzDl7DYvORxnbcIYZXwn71mVNa+eamRPUSZDYcvSdHTTkuPk5Fgsn8fCMlkUG1IC8uOtAcDd2uh5hHgzsuFqy7ejaBLdFWsioeQhk=
 cache:
   directories:
   - node_modules
@@ -20,7 +21,7 @@ after_script:
 - git add .
 - git commit -m "Update docs"
 - git push --force --quiet "https://${REPO_TOKEN}@${GIT_REPO}" master:master
-- git push --force --quiet "https://${CODING_REPO_TOKEN}@${CODING_REPO}" master:master
+- git push --force --quiet "https://${secure}@${CODING_REPO}" master:master
 install:
 - npm install hexo-cli -g
 - npm install
