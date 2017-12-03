@@ -13,6 +13,7 @@ cache:
   - node_modules
 after_script:
 - cd ./public
+- git init
 - git config --global user.name 'jumpbyte'
 - git config --global user.email 920293408@qq.com
 - git add .
